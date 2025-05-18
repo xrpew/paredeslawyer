@@ -40,9 +40,9 @@ const modalWhatsApp = document.getElementById("modalWhatsApp");
 
 // Simulamos un número para cada abogado (puedes personalizar esto también)
 const whatsapps = {
-    "John Doe": "34600123456",
-    "Jeremy": "34600234567",
-    "Sergio": "34600345678"
+    "Ely Paredes": "584145771707",
+    "Fernando Pérez": "584126786035",
+    "Neydely Paredes": "584125248475"
 };
 
 modalCorreo.href = `mailto:${abogado.email}`;
