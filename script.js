@@ -11,7 +11,7 @@ const abogados = [
     {
         nombre: "Fernando Pérez",
         especialidad: "Derecho Mercantil",
-        descripcion: "Fernando Pérez es abogado mercantilista con un enfoque práctico en la asesoría jurídica a empresas y autónomos. Su experiencia incluye contratos mercantiles, sociedades, responsabilidad empresarial y defensa frente a litigios comerciales. Es un aliado estratégico para negocios que buscan crecer con seguridad jurídica.",
+        descripcion: "Fernando Pérez es abogado especializado en Derecho Mercantil, con amplia experiencia en la redacción de documentos constitutivos para la creación de compañías, firmas personales y PyMEs. Asesora en la elaboración y registro de estatutos, incluyendo modificaciones, cambios de domicilio, y nombramientos o ceses de administradores. <br><br> También gestiona la legalización de libros de comercio (actas, contabilidad, socios/accionistas) y el registro de actos y contratos relevantes para las empresas. <br> <br> Su enfoque es ofrecer un acompañamiento jurídico completo desde la constitución hasta la evolución operativa de cada negocio.",
         imagen: "./abog2.jpg",
         email: "jeremy@firmalegal.com",
         whatsapp: "584126786035"
@@ -42,7 +42,7 @@ const abogados = [
     },
     {
         nombre: "Eva Paredes",
-        especialidad: "Extranjería, Migrarorio",
+        especialidad: "Extranjería",
         descripcion: "Eva Paredes es especialista en Derecho Migratorio y Extranjería, brindando asesoría integral a personas que desean regularizar su situación legal, solicitar visas, obtener nacionalidad o gestionar permisos de residencia. Su enfoque cercano y humano ha ayudado a cientos de personas a construir una nueva vida con respaldo jurídico y seguridad.",
         imagen: "./abog3.jpg",
         email: "sergio@firmalegal.com",
@@ -83,7 +83,7 @@ function mostrarContacto(index) {
     document.getElementById("modalImg").src = abogado.imagen;
     document.getElementById("modalNombre").textContent = abogado.nombre;
     document.getElementById("modalEspecialidad").textContent = abogado.especialidad;
-    document.getElementById("modalDescripcion").textContent = abogado.descripcion;
+    document.getElementById("modalDescripcion").innerHTML = abogado.descripcion;
 
     document.getElementById("modalCorreo").href = `mailto:${abogado.email}`;
     document.getElementById("modalWhatsApp").href = `https://wa.me/${abogado.whatsapp}?text=Hola%20${abogado.nombre},%20necesito%20una%20asesoría%20legal.`;
