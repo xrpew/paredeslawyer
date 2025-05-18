@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal para Todos - Asesoría Online</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+<h1>Legal para Todos</h1>
+<p>Tu defensa legal empieza aquí: asesoría online y representación jurídica completa</p>
+    </header>
+
+    <section class="tramites">
+      <h2>Trámites y Defensa Legal</h2>
+
+      <p>
+        En <strong>Legal para Todos</strong> no solo asesoramos por internet. Somos
+        abogados con experiencia que defendemos tus derechos en procesos
+        judiciales reales, actuamos como tu representación legal ante cualquier
+        instancia, y resolvemos tus dudas legales con claridad, rapidez y
+        profesionalismo.
+      </p>
+
+      <div class="tramite">
+        <h3>Defensa en procesos penales</h3>
+        <p>
+          Si estás enfrentando una acusación penal, denuncia, o investigación
+          policial, es fundamental tener una defensa firme. Te representamos
+          desde el primer momento, garantizando que se respeten tus derechos
+          constitucionales y asegurándonos de que no enfrentes el proceso solo.
+        </p>
+      </div>
+
+      <div class="tramite">
+        <h3>Demandas y litigios civiles</h3>
+        <p>
+          ¿Te han demandado o necesitas demandar? Ya sea por incumplimiento de
+          contrato, conflictos familiares, herencias o propiedad, nos encargamos
+          de la redacción de la demanda, te representamos en juicio y negociamos
+          acuerdos para proteger tus intereses.
+        </p>
+      </div>
+
+      <div class="tramite">
+        <h3>Asesoría y representación mercantil</h3>
+        <p>
+          Te apoyamos en conflictos comerciales, deudas, cláusulas abusivas,
+          competencia desleal o problemas con socios. Si eres empresario o
+          autónomo, defendemos legalmente a tu empresa frente a reclamaciones o
+          fraudes.
+        </p>
+      </div>
+
+      <div class="tramite">
+        <h3>Trámites online rápidos</h3>
+        <ul>
+          <li>Redacción y revisión de contratos</li>
+          <li>Asesoría en divorcios y acuerdos familiares</li>
+          <li>Registro de empresas y sociedades</li>
+          <li>Consultas sobre antecedentes, multas o citaciones</li>
+        </ul>
+        <p>
+          Estos trámites se pueden resolver en línea, pero siempre con el
+          respaldo legal de un abogado real que conoce tu caso y responde por
+          ti.
+        </p>
+      </div>
+
+      <p>
+        ¿No estás seguro de lo que necesitas? Escríbenos sin compromiso.
+        Escuchamos tu situación y te orientamos sobre el mejor camino legal.
+        ¡Más que trámites, defendemos personas!
+      </p>
+    </section>
+
+<section class="abogados">
+    <h2>Conoce a nuestros abogados</h2>
+    <div class="cards">
+        <div class="card" onclick="mostrarContacto('Ely Paredes', 'Penal')">
+            <img style="width:100%;" src="./abog2.jpg" alt="Ely Paredes - Abogado Penal">
+            <div class="card-texto">
+                <h3>Ely Paredes</h3>
+                <p>Especialista en Derecho Penal</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="mostrarContacto('Fernando Pérez', 'Mercantil')">
+            <img style="width:100%;"  src="./abog1.jpeg" alt="Fernando Pérez - Abogado Mercantil">
+            <div class="card-texto">
+                <h3>Fernando Pérez</h3>
+                <p>Especialista en Derecho Mercantil</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="mostrarContacto('Neydely Paredes', 'Civil')">
+            <img style="width:100%;" src="./abog3.jpg" alt="Neydely Paredes - Abogado Civil">
+            <div class="card-texto">
+                <h3>Neydely Paredes</h3>
+                <p>Especialista en Derecho Civil</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Modal de abogado -->
+<div id="modalAbogado" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <img id="modalImg" src="" alt="Foto del abogado">
+        <h3 id="modalNombre">Nombre</h3>
+        <p id="modalEspecialidad">Especialidad</p>
+        <p id="modalDescripcion">Descripción del abogado...</p>
+<div class="botones-contacto">
+    <a id="modalCorreo" href="#" class="boton-contacto correo">Correo</a>
+    <a id="modalWhatsApp" href="#" class="boton-contacto whatsapp" target="_blank">WhatsApp</a>
+</div>
+    </div>
+</div>
+
+
+    <section class="contacto" id="contacto">
+      <h2>¿Necesitas más ayuda?</h2>
+      <p id="contactoInfo">
+        Selecciona un abogado para ver sus datos de contacto.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Legal para Todos - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
