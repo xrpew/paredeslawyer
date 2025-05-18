@@ -175,6 +175,10 @@ footer {
     position: relative;
 }
 
+#modalDescripcion{
+    text-align: left;
+}
+
 .modal-contenido img {
     width: 150px;
     height: 150px;
